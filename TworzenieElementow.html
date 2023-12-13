@@ -5,8 +5,9 @@
 
 <script>
     function dodaj(){
+        let i=1;
         let akapit=document.createElement("p");
-        let content=document.createTextNode("Nowy akapit");
+        let content=document.createTextNode("Nowy akapit"+ i++);
         akapit.appendChild(content);
         let position=document.querySelector("#div1");
         position.appendChild(akapit);
